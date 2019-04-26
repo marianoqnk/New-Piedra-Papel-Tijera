@@ -16,9 +16,8 @@ MTboard mtBoard;
 byte jugadas = 0, ganadas = 0;
 
 void setup() {
-  Serial.begin(57600);
+  mtBoard.ini();
   randomSeed(analogRead(4));
-  delay(3000);
   mtBoard.textoScroll("Gana 4 veces de 10");
   mtBoard.apagaTodos();
 }
